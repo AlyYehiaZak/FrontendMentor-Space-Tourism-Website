@@ -4,25 +4,20 @@
     box-sizing: border-box;
 }
 
-
-.my-text-primary{
-    color: black;
-}
-
-.my-text-secondary{
-    color: black;
-}
-
-.my-bg-primary{
-    background-color: black;
-}
-
-.my-bg-secondary{
-    background-color: black;
+a{
+    text-decoration: none;
 }
 
 .myFontFamily{
-    
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.myFontFamily2{
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
