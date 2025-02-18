@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
 .myFontFamily{
     font-family: "Bellefair", serif;
     font-weight: 400;
@@ -22,8 +18,59 @@ a{
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* ////////////////// Navbar ////////////////////// */
 
+.navbar_links_container a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
 
+.navbar_links_container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s ;
+}
+
+.navbar_links_container a:hover::after {
+    width: 100%;
+}
+
+.navbar_links_container a.active::after {
+    width: 100%;
+}
+
+.navbar_hr{
+    width: 35%;
+    position: relative;
+}
+
+.navbar_hr hr{
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    right: -32px;
+    z-index: 2;
+}
+
+.navbar_links_container{
+    backdrop-filter: blur(40px);
+    background-color: rgba(93, 93, 93, 0.1);
+}
+
+/* ////////////////// Home ////////////////////// */
+
+.home_section{
+    background-image: url(./../public/images/home/background-home-desktop.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -35,7 +82,11 @@ a{
 
 /* ////// lg /////// */
 @media (max-width:992px){
-    
+    /* .home_section{
+        background-image: url(./../public/images/home/background-home-tablet.jpg);
+        width: auto;
+        height: auto;
+    } */
 }
 
 /* ////// md /////// */
@@ -45,5 +96,20 @@ a{
 
 /* ////// Sm /////// */
 @media (max-width:576px){
+
+    /* .home_section{
+        background-image: url(./../public/images/home/background-home-mobile.jpg);
+        width: auto;
+        height: auto;
+    } */
     
+    .navbar_links_container a::after {
+        bottom: -1px;
+    }
+    .navbar_links_container a:hover::after {
+        width: 25%;
+    }
+    .navbar_links_container a.active::after {
+        width: 25%;
+    }
 }
