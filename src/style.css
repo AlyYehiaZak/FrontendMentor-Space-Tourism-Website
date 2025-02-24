@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+.my-text-secondary{
+    color: rgb(185, 184, 184);
+}
+
 .myFontFamily{
     font-family: "Bellefair", serif;
     font-weight: 400;
@@ -80,10 +88,6 @@
     font-size: 130px;
 }
 
-.home_paragraph{
-    color: rgb(185, 184, 184);
-}
-
 .home_paragraph2{
     width: 50%;
 }
@@ -97,6 +101,56 @@
 }
 
 /* ////////////////// Destination ////////////////////// */
+
+.destination_section{
+    background-image: url(./../public/images/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.destination_container{
+    padding-top: 160px;
+}
+
+.destination_title{
+    font-size: 70px;
+}
+
+.destination_img{
+    width: 410px ;
+}
+
+.destination_content{
+    width: 75%;
+}
+
+.destination_button_container a{
+    position: relative;
+}
+
+.destination_button_container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ;
+}
+
+.destination_button_container a:hover::after {
+    width: 100%;
+}
+
+.destination_button_clicked::after{
+    width: 100% !important;
+}
+
+
+/* ////////////////// Crew ////////////////////// */
+
 
 
 
@@ -127,6 +181,13 @@
 
     .home_explore{
         margin-top: 80px;
+    }
+
+
+    .destination_section{
+        background-image: url(./../public/images/destination/background-destination-tablet.jpg);
+        width: auto;
+        height: auto;
     }
 
 }
@@ -168,5 +229,24 @@
         height: 190px;
         width: 190px;
     }
-    
+
+
+
+    .destination_section{
+        background-image: url(./../public/images/destination/background-destination-mobile.jpg);
+        width: auto;
+        height: auto;
+    }
+
+    .destination_container{
+        padding-top: 110px;
+    }
+
+    .destination_img{
+        width: 250px;
+    }
+
+    .destination_content{
+        width: 100%;
+    }
 }
