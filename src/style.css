@@ -152,6 +152,47 @@ a{
 /* ////////////////// Crew ////////////////////// */
 
 
+.crew_section{
+    background-image: url(./../public/images/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.crew_container{
+    padding-top: 160px;
+}
+
+.crew_paragraphs_width{
+    width: 85%;
+    margin-bottom: 90px;
+}
+
+.crew_title{
+    font-size: 45px;
+}
+
+.crew_content_container{
+    height: calc(100vh - 202px);
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 10px !important;
+}
+
+.swiper-pagination {
+    left: 50px !important;
+    bottom: 95px !important;
+    text-align: left !important;
+}
+
+
+/* ////////////////// Technology ////////////////////// */
+
+
 
 
 
@@ -164,6 +205,10 @@ a{
         width: 70%;
     }
 
+
+    .swiper-pagination {
+        bottom: 70px !important;
+    }
 }
 
 /* ////// lg /////// */
@@ -190,11 +235,45 @@ a{
         height: auto;
     }
 
+
+    .crew_section{
+        background-image: url(./../public/images/crew/background-crew-tablet.jpg);
+        width: auto;
+        height: auto;
+    }
+
+    .crew_paragraphs_width{
+        width: 90%;
+        margin-bottom: 0px;
+    }
+
+    .crew_content_container{
+        height: auto;
+    }
+
+    .crew_img{
+        width: 400px;
+        height: 460px;
+    }
+
+    .swiper-pagination {
+        left: 0px !important;
+        bottom: 0px !important;
+        text-align: center !important;
+    }
+
 }
 
 /* ////// md /////// */
 @media (max-width:768px){
-    
+    .crew_img{
+        width: 380px;
+        height: 440px;
+    }
+
+    .crew_container{
+        padding-top: 140px;
+    }
 }
 
 /* ////// Sm /////// */
@@ -248,5 +327,21 @@ a{
 
     .destination_content{
         width: 100%;
+    }
+
+
+    .crew_section{
+        background-image: url(./../public/images/crew/background-crew-mobile.jpg);
+        width: auto;
+        height: auto;
+    }
+
+    .crew_img{
+        width: 280px;
+        height: 340px;
+    }
+
+    .crew_container{
+        padding-top: 110px;
     }
 }
