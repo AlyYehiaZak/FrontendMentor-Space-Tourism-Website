@@ -6,6 +6,7 @@ import Home from "./Components/Home.jsx";
 import Destination from "./Components/Destination.jsx";
 import Crew from "./Components/Crew.jsx";
 import Technology from "./Components/Technology.jsx";
+import PageNotFound from "./Components/PageNotFound.jsx";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/crew" element={<Crew />} />
           <Route path="/technology" element={<Technology />} />
-          <Route path="*" element={<h2>Page Not Found</h2>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
 
       </Router>
