@@ -35,15 +35,18 @@ function Technology() {
                                 </div>
 
                                 <div className="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
-                                    <div className="mb-5 mt-3 mt-lg-0 mb-lg-2 container">
+                                    <div className="mb-4 mt-3 mt-lg-0 mb-lg-2 container">
                                         <p className="my-text-secondary myFontFamily fs-5 mb-1">THE TERMINOLOGY ...</p>
                                         <p className="text-white myFontFamily technology_title text-uppercase">{data.technology[selectedTechnology].name}</p>
                                         <p className="my-text-secondary myFontFamily2">{data.technology[selectedTechnology].description}</p>
                                     </div>
                                 </div>
 
-                                <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center mb-5 mb-lg-0">
-                                    <img src={data.technology[selectedTechnology].images.portrait} alt="technology" className="technology_img"/>
+                                <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                    <picture>
+                                        <source srcSet={data.technology[selectedTechnology].images.landscape} media="(max-width:992px)" />
+                                        <img src={data.technology[selectedTechnology].images.portrait} alt="technology" className="technology_img"/>
+                                    </picture>
                                 </div>
 
                             </div>
